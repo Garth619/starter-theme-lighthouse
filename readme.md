@@ -1,4 +1,4 @@
-<b>1p21 Starter Theme</b>
+<b>Starter Theme</b>
 
 Complete WordPress install with frequently used plugins, js, css and a custom functions.php
 

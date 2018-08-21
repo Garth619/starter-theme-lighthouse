@@ -1,33 +1,8 @@
-/* Custom JS */
-
-(function(){
-
-
-  /* ------------------- JS to run after all content (html + images) is completely loaded ------------------- */
-
-  jQuery(window).on('load', function($) {
-
-    new WOW().init();
-
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-  /* ------------------- JS to run after all html is completely loaded ------------------- */
-
-  jQuery(document).ready(function($) {
-
-
-    /* Modernizr - check if browser supports webp. if it does add class webp to html tag
+jQuery(document).ready(function($){
+	
+	
+	
+	 /* Modernizr - check if browser supports webp. if it does add class webp to html tag
      --------------------------------------------------------------------------------------- */
 
     Modernizr.on('webp', function(result) {});
@@ -95,26 +70,9 @@
       });
     });
 
-
-
-
-
-    /* Long Page Title - If the page/blog title (h1) is very long, add a class so we can make the font size smaller.
-      --------------------------------------------------------------------------------------- */
-
-    if ( jQuery(".single .default-main h1").text().length > 28 ) {
-      jQuery(".single .default-main h1").addClass("page-title-long");
-    }
-
-    if ( jQuery(".page-template-default .default-main h1").text().length > 28 ) {
-      jQuery(".page-template-default .default-main h1").addClass("page-title-long");
-    }
-
-
-
-
-
-    /* Wistia - Call function when script needs to be loaded either by hover or waypoints
+		
+		
+		 /* Wistia - Call function when script needs to be loaded either by hover or waypoints
      --------------------------------------------------------------------------------------- */
 
     function wistiaLoad() {
@@ -193,50 +151,8 @@
     });
 
 
-
-    /* Run Functions on Resize if needed
-      --------------------------------------------------------------------------------------- */
-
-    // var resizeTimerInternal;
-    // jQuery(window).on('resize', function() {
-    //
-    //   clearTimeout(resizeTimerInternal)
-    //
-    //   resizeTimerInternal = setTimeout(function() {
-    //     //add functions here to fire on resize
-    //   }, 100)
-    //
-    // });
-
-
-
-
-
-
-    /* Accordion Dropdown Menu Template if needed. (for mobile menu and sidebar menu)
-      --------------------------------------------------------------------------------------- */
-
-    // jQuery('#menu-sidebar-menu > .menu-item-has-children > .sub-menu').addClass('first-sub');
-    // jQuery('#menu-sidebar-menu .menu-item-has-children .sub-menu .menu-item-has-children .sub-menu').addClass('last-sub');
-    //
-    // jQuery('#menu-sidebar-menu > .menu-item-has-children a').click(function() {
-    //   jQuery(this).siblings('.first-sub').slideToggle();
-    // });
-    //
-    // jQuery('#menu-sidebar-menu > .menu-item-has-children > .first-sub > .menu-item-has-children a').click(function() {
-    //   jQuery(this).siblings('.last-sub').slideToggle();
-    // });
-
-
-
-
-
-
-    /* End Document Ready
-     --------------------------------------------------------------------------------------- */
-
-  });
-
-
-
-}());
+	
+	
+	
+  
+}); // document ready
